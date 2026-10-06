@@ -1,0 +1,88 @@
+{
+  "name": "Veyra Documentation",
+  "version": "0.1.0",
+  "last_updated": "2026-10-06",
+  "sections": [
+    {
+      "id": "getting-started",
+      "title": "Getting Started",
+      "items": [
+        {
+          "slug": "installation",
+          "title": "Installation Guide",
+          "summary": "How to install Veyra on Linux, Windows, and macOS."
+        },
+        {
+          "slug": "quickstart",
+          "title": "Veyra Quickstart",
+          "summary": "Learn Veyra workflow and core syntax in 5 minutes."
+        }
+      ]
+    },
+    {
+      "id": "language-basics",
+      "title": "Language Basics",
+      "items": [
+        {
+          "slug": "variables",
+          "title": "Variables & Mutability",
+          "summary": "let, mut, implicit typing, and type annotations."
+        },
+        {
+          "slug": "functions",
+          "title": "Functions & Closures",
+          "summary": "Defining functions, default parameters, and arrow syntax."
+        }
+      ]
+    },
+    {
+      "id": "oop-and-memory",
+      "title": "OOP & Memory Management",
+      "items": [
+        {
+          "slug": "structs",
+          "title": "Structs & Methods",
+          "summary": "Data layout, constructors, methods, and inheritance."
+        },
+        {
+          "slug": "pointers",
+          "title": "Pointers & References",
+          "summary": "Direct hardware memory access and address-of operators."
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "title": "Advanced Features",
+      "items": [
+        {
+          "slug": "operator-overloading",
+          "title": "Operator Overloading",
+          "summary": "Overloading +, -, *, [], and comparisons on structs."
+        }
+      ]
+    },
+    {
+      "id": "standard-library",
+      "title": "Standard Prelude API",
+      "items": [
+        {
+          "slug": "prelude-api",
+          "title": "Built-in Prelude Reference",
+          "summary": "println, len, range, enumerate, file I/O, math, and timers."
+        }
+      ]
+    },
+    {
+      "id": "game-development",
+      "title": "Game Development",
+      "items": [
+        {
+          "slug": "raylib",
+          "title": "Raylib & Graphics Integration",
+          "summary": "Creating 2D/3D games with Raylib and Veyra."
+        }
+      ]
+    }
+  ]
+}
