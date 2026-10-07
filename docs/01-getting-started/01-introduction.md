@@ -1,62 +1,54 @@
 # Introduction & Architecture
 
-**Veyra** (`.vey`) is a high-performance, statically typed systems programming language designed to unite the **effortless syntax and rapid developer velocity of Python** with the **deterministic performance, zero-cost abstractions, and hardware control of C++20/23**.
+**Veyra** (`.vey`) is a high-performance, statically typed systems programming language that compiles directly to native machine code through an optimized **C++20/23 backend**.
+
+Veyra is designed to combine the **clean syntax and developer velocity of Python** with the **deterministic performance, zero-cost abstractions, and hardware control of C++**.
 
 ---
 
-## 🎯 The Core Philosophy
-
-In modern software development, developers are routinely forced to choose between two extremes:
-
-1. **High-Level Interpreted Languages (Python, Ruby, JavaScript)**:
-   - Exceptionally high developer ergonomics, readable syntax, and rapid prototyping.
-   - Crippled by high memory usage (30+ MB baselines), slow execution speeds (50x–100x slower), and non-deterministic Garbage Collection (GC) pauses that cause stutter in games and real-time systems.
-2. **Low-Level Systems Languages (C++, C, Rust)**:
-   - Peak native machine performance, tiny memory footprints (< 1 MB), and direct hardware manipulation.
-   - Hindered by tedious boilerplate, complex build systems (CMake/Make), header files, slow compile times, and verbose type declarations.
-
-**Veyra eliminates this dilemma entirely.**
+## 🚀 The Core Philosophy
 
 ```veyra
-# A complete, standalone high-performance Veyra program
-println("Hello from Veyra!")
-let data = [10, 20, 30, 40, 50]
-let total = 0
-for x in data:
-    total += x
-println("Computed sum: {total}")
+// A complete, standalone high-performance Veyra script
+let name = "Veyra"
+println("Welcome to {name}!")
+
+let numbers = [10, 20, 30, 40, 50]
+let mut total = 0
+
+for n in numbers {
+    total += n
+}
+
+println("Computed total: {total}")
 ```
 
 ---
 
 ## 🏗️ Compiler Architecture
 
-The Veyra compiler is a native Ahead-of-Time (AOT) toolchain that operates in 5 distinct phases:
+The Veyra compiler pipeline consists of:
 
 ```
 [ Source Code (.vey) ]
         │
         ▼
-[ Lexical Analysis & Tokenizer ]
+[ Lexer (Tokens) ]
         │
         ▼
-[ Abstract Syntax Tree (AST) Parser ]
+[ Recursive-Descent Parser (AST) ]
         │
         ▼
-[ Semantic & Type Deduction Engine ]
+[ C++20 Code Generator + Embedded Standard Prelude ]
         │
         ▼
-[ C++20/23 Code Generator + Standard Prelude ]
+[ Host C++ Compiler (GCC / Clang with -O3) ]
         │
         ▼
-[ Native Compiler Backend (GCC / Clang / MSVC with -O3 & LTO) ]
-        │
-        ▼
-[ Standalone Native Machine Binary (.exe / ELF / Mach-O) ]
+[ Standalone Native Executable (.exe / ELF / Mach-O) ]
 ```
 
-### Key Architectural Advantages:
-- **Zero Runtime Overhead**: Veyra compiles down to pure native machine code. There is no virtual machine, no interpreter, and no bytecode layer.
-- **Deterministic RAII Memory Model**: Memory and system resources (file handles, sockets, GPU objects) are freed deterministically the instant they leave scope. Zero Garbage Collector pauses.
-- **LLVM & GCC Optimization**: By targeting C++20, Veyra benefits from over 30 years of compiler research in loop unrolling, SIMD auto-vectorization, inline expansion, and Link-Time Optimization (LTO).
-- **First-Class Multi-Platform Support**: Runs natively on **Windows (x64/ARM64)**, **macOS (Apple Silicon M1/M2/M3 & Intel)**, and **Linux (x86_64 & AArch64)**.
+### Key Architectural Pillars:
+- **No VM, No Interpreter Runtime**: Compiles to standalone machine code with `< 1 MB` memory baseline and `< 1 ms` startup time.
+- **Deterministic RAII Memory Model**: No Garbage Collector (GC) pauses. Resources, sockets, and memory are cleaned up the exact microsecond they exit scope.
+- **Embedded Standard Prelude**: Built-in high-performance vectors (`vec[T]`), hash maps (`map[K, V]`), strings, math functions, and file utilities.

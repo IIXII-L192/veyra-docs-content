@@ -1,14 +1,13 @@
 # Conditionals (if / elif / else)
 
 ```veyra
-let score = 87
+let score = 85
 
-if score >= 90:
+if score >= 90 {
     println("Grade: A")
-elif score >= 80:
+} else if score >= 80 {
     println("Grade: B")
-elif score >= 70:
+} else {
     println("Grade: C")
-else:
-    println("Grade: F")
+}
 ```

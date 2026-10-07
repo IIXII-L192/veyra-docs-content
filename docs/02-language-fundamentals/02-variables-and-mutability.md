@@ -1,48 +1,32 @@
-# Variables, Mutability & Scope
+# Variables & Mutability
 
-In Veyra, variables are immutable by default to prevent accidental side effects and enhance compiler optimizations.
+In Veyra, variables are immutable by default using `let`, and mutable when declared with `let mut`.
 
 ---
 
-## 🔒 Immutable Bindings (`let`)
+## 🔒 Immutable vs Mutable
 
 ```veyra
-let host = "127.0.0.1"
-let port = 8080
+// Immutable binding (default)
+let language = "Veyra"
+// language = "Other"  // COMPILE ERROR: Cannot reassign immutable variable
 
-# host = "0.0.0.0"  # COMPILE ERROR: Cannot reassign immutable variable 'host'
+// Mutable binding
+let mut counter = 0
+counter += 1
+
+// Explicit type annotations
+let pi: double = 3.14159265359
+let mut user_id: int64 = 1001
 ```
 
 ---
 
-## 🔓 Mutable Bindings (`let mut`)
+## ⚡ Type Inference
 
 ```veyra
-let mut request_count = 0
-request_count += 1
-println("Total requests: {request_count}")
-```
-
----
-
-## 🛡️ Constants (`const`)
-
-Constants are strictly evaluated at compile time:
-
-```veyra
-const MAX_BUFFER_SIZE: int = 4096
-const DEFAULT_TIMEOUT_MS: int = 5000
-```
-
----
-
-## 📦 Variable Shadowing & Lexical Scope
-
-```veyra
-let x = 10
-if x > 5:
-    let x = 99      # Shadows outer 'x' within this block
-    println("Inner x: {x}")  # 99
-
-println("Outer x: {x}")      # 10
+let name = "Alice"          // Inferred as string
+let age = 30                // Inferred as int64
+let ratio = 0.75            // Inferred as double
+let items = [1, 2, 3, 4]    // Inferred as vec<int64>
 ```

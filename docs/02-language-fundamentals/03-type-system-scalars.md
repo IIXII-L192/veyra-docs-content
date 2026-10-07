@@ -1,10 +1,6 @@
-# Complete Primitive Types
+# Primitive Scalar Types
 
-Veyra provides fixed-width scalar types for precise hardware control.
-
----
-
-## 🔢 Integer Types Matrix
+Veyra provides fixed-width scalar types with explicit bit-widths:
 
 | Type | Bits | Signed | Range | C++ Equivalent |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16,34 +12,8 @@ Veyra provides fixed-width scalar types for precise hardware control.
 | `uint16` | 16 | Unsigned | 0 to 65,535 | `uint16_t` |
 | `uint32` | 32 | Unsigned | 0 to 4,294,967,295 | `uint32_t` |
 | `uint64` | 64 | Unsigned | 0 to 1.84 × 10^19 | `uint64_t` |
-
-```veyra
-let small_byte: byte = 255
-let packet_id: uint32 = 400201
-let hex_mask: int = 0xDEADBEEF
-let binary_flags: int = 0b11010110
-```
-
----
-
-## 🌊 Floating-Point Types
-
-| Type | Bits | Precision | C++ Equivalent |
-| :--- | :--- | :--- | :--- |
-| `f32` / `float` | 32 | Single precision (~7 decimal digits) | `float` |
-| `f64` / `double` | 64 | Double precision (~16 decimal digits) | `double` |
-
-```veyra
-let delta_time: f32 = 0.016667
-let precise_pi: f64 = 3.14159265358979323846
-```
-
----
-
-## 🔤 Boolean, Characters & Strings
-
-```veyra
-let is_active: bool = true
-let separator: char = '|'
-let greeting: string = "Hello, Veyra!"
-```
+| `f32` / `float` | 32 | Single float | ~7 decimal digits | `float` |
+| `f64` / `double` | 64 | Double float | ~16 decimal digits | `double` |
+| `bool` | 8 | Boolean | `true` / `false` | `bool` |
+| `char` | 8 | Character | 1 byte ASCII/UTF-8 byte | `char` |
+| `string` | Dynamic | UTF-8 String | Value type string | `std::string` |
