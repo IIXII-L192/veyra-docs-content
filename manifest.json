@@ -1,86 +1,171 @@
 {
-  "name": "Veyra Documentation",
-  "version": "0.1.0",
-  "last_updated": "2026-10-06",
   "sections": [
     {
-      "id": "getting-started",
+      "id": "01-getting-started",
       "title": "Getting Started",
-      "items": [
+      "chapters": [
         {
-          "slug": "installation",
-          "title": "Installation Guide",
-          "summary": "How to install Veyra on Linux, Windows, and macOS."
+          "id": "01-introduction",
+          "title": "Introduction & Philosophy",
+          "path": "docs/01-getting-started/01-introduction.md"
         },
         {
-          "slug": "quickstart",
-          "title": "Veyra Quickstart",
-          "summary": "Learn Veyra workflow and core syntax in 5 minutes."
+          "id": "02-installation",
+          "title": "Installation & Setup",
+          "path": "docs/01-getting-started/02-installation.md"
+        },
+        {
+          "id": "03-cli-reference",
+          "title": "CLI Command Reference",
+          "path": "docs/01-getting-started/03-cli-reference.md"
+        },
+        {
+          "id": "04-hello-world",
+          "title": "Your First Veyra Program",
+          "path": "docs/01-getting-started/04-hello-world.md"
         }
       ]
     },
     {
-      "id": "language-basics",
+      "id": "02-language-basics",
       "title": "Language Basics",
-      "items": [
+      "chapters": [
         {
-          "slug": "variables",
+          "id": "01-syntax-and-structure",
+          "title": "Syntax & Structure",
+          "path": "docs/02-language-basics/01-syntax-and-structure.md"
+        },
+        {
+          "id": "02-variables-and-mutability",
           "title": "Variables & Mutability",
-          "summary": "let, mut, implicit typing, and type annotations."
+          "path": "docs/02-language-basics/02-variables-and-mutability.md"
         },
         {
-          "slug": "functions",
-          "title": "Functions & Closures",
-          "summary": "Defining functions, default parameters, and arrow syntax."
+          "id": "03-primitive-types",
+          "title": "Primitive Types & Conversions",
+          "path": "docs/02-language-basics/03-primitive-types.md"
+        },
+        {
+          "id": "04-operators-and-expressions",
+          "title": "Operators & Expressions",
+          "path": "docs/02-language-basics/04-operators-and-expressions.md"
+        },
+        {
+          "id": "05-strings-and-interpolation",
+          "title": "Strings & Interpolation",
+          "path": "docs/02-language-basics/05-strings-and-interpolation.md"
+        },
+        {
+          "id": "06-control-flow",
+          "title": "Control Flow",
+          "path": "docs/02-language-basics/06-control-flow.md"
         }
       ]
     },
     {
-      "id": "oop-and-memory",
-      "title": "OOP & Memory Management",
-      "items": [
+      "id": "03-functions-and-closures",
+      "title": "Functions & Closures",
+      "chapters": [
         {
-          "slug": "structs",
-          "title": "Structs & Methods",
-          "summary": "Data layout, constructors, methods, and inheritance."
+          "id": "01-function-declarations",
+          "title": "Function Declarations",
+          "path": "docs/03-functions-and-closures/01-function-declarations.md"
         },
         {
-          "slug": "pointers",
-          "title": "Pointers & References",
-          "summary": "Direct hardware memory access and address-of operators."
+          "id": "02-anonymous-functions-and-lambdas",
+          "title": "Lambdas & Closures",
+          "path": "docs/03-functions-and-closures/02-anonymous-functions-and-lambdas.md"
         }
       ]
     },
     {
-      "id": "advanced",
-      "title": "Advanced Features",
-      "items": [
+      "id": "04-data-structures-and-collections",
+      "title": "Data Structures & Collections",
+      "chapters": [
         {
-          "slug": "operator-overloading",
+          "id": "01-lists-and-vectors",
+          "title": "Lists & Dynamic Arrays",
+          "path": "docs/04-data-structures-and-collections/01-lists-and-vectors.md"
+        },
+        {
+          "id": "02-maps-and-dictionaries",
+          "title": "Maps & Dictionaries",
+          "path": "docs/04-data-structures-and-collections/02-maps-and-dictionaries.md"
+        }
+      ]
+    },
+    {
+      "id": "05-oop-and-memory",
+      "title": "OOP & Memory Model",
+      "chapters": [
+        {
+          "id": "01-structs-and-classes",
+          "title": "Structs & Classes",
+          "path": "docs/05-oop-and-memory/01-structs-and-classes.md"
+        },
+        {
+          "id": "02-operator-overloading",
           "title": "Operator Overloading",
-          "summary": "Overloading +, -, *, [], and comparisons on structs."
-        }
-      ]
-    },
-    {
-      "id": "standard-library",
-      "title": "Standard Prelude API",
-      "items": [
+          "path": "docs/05-oop-and-memory/02-operator-overloading.md"
+        },
         {
-          "slug": "prelude-api",
-          "title": "Built-in Prelude Reference",
-          "summary": "println, len, range, enumerate, file I/O, math, and timers."
+          "id": "03-pointers-and-references",
+          "title": "Pointers & References",
+          "path": "docs/05-oop-and-memory/03-pointers-and-references.md"
         }
       ]
     },
     {
-      "id": "game-development",
+      "id": "06-standard-library-reference",
+      "title": "Standard Prelude Reference",
+      "chapters": [
+        {
+          "id": "01-io-and-printing",
+          "title": "I/O & Console Functions",
+          "path": "docs/06-standard-library-reference/01-io-and-printing.md"
+        },
+        {
+          "id": "02-math-and-time",
+          "title": "Math, Time & Files API",
+          "path": "docs/06-standard-library-reference/02-math-and-time.md"
+        }
+      ]
+    },
+    {
+      "id": "07-c-and-cpp-interop",
+      "title": "C & C++ Interoperability",
+      "chapters": [
+        {
+          "id": "01-native-interop",
+          "title": "Native Headers & Inline C++",
+          "path": "docs/07-c-and-cpp-interop/01-native-interop.md"
+        }
+      ]
+    },
+    {
+      "id": "08-game-development",
       "title": "Game Development",
-      "items": [
+      "chapters": [
         {
-          "slug": "raylib",
-          "title": "Raylib & Graphics Integration",
-          "summary": "Creating 2D/3D games with Raylib and Veyra."
+          "id": "01-raylib-game",
+          "title": "60 FPS Game with Raylib",
+          "path": "docs/08-game-development/01-raylib-game.md"
+        }
+      ]
+    },
+    {
+      "id": "09-faq-and-migration",
+      "title": "Migration & Troubleshooting",
+      "chapters": [
+        {
+          "id": "01-python-to-veyra",
+          "title": "Migrating from Python",
+          "path": "docs/09-faq-and-migration/01-python-to-veyra.md"
+        },
+        {
+          "id": "02-troubleshooting",
+          "title": "Troubleshooting & Diagnostics",
+          "path": "docs/09-faq-and-migration/02-troubleshooting.md"
         }
       ]
     }
