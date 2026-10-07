@@ -2,170 +2,253 @@
   "sections": [
     {
       "id": "01-getting-started",
-      "title": "Getting Started",
+      "title": "1. Getting Started & Installation",
       "chapters": [
         {
           "id": "01-introduction",
-          "title": "Introduction & Philosophy",
+          "title": "Introduction & Architecture",
           "path": "docs/01-getting-started/01-introduction.md"
         },
         {
-          "id": "02-installation",
-          "title": "Installation & Setup",
-          "path": "docs/01-getting-started/02-installation.md"
+          "id": "02-installation-windows",
+          "title": "Windows Installation Guide",
+          "path": "docs/01-getting-started/02-installation-windows.md"
         },
         {
-          "id": "03-cli-reference",
-          "title": "CLI Command Reference",
-          "path": "docs/01-getting-started/03-cli-reference.md"
+          "id": "03-installation-macos",
+          "title": "macOS Installation Guide",
+          "path": "docs/01-getting-started/03-installation-macos.md"
         },
         {
-          "id": "04-hello-world",
-          "title": "Your First Veyra Program",
-          "path": "docs/01-getting-started/04-hello-world.md"
+          "id": "04-installation-linux",
+          "title": "Linux Installation Guide",
+          "path": "docs/01-getting-started/04-installation-linux.md"
+        },
+        {
+          "id": "05-cli-reference",
+          "title": "Exhaustive CLI Command Reference",
+          "path": "docs/01-getting-started/05-cli-reference.md"
+        },
+        {
+          "id": "06-first-programs",
+          "title": "First Programs & Workflow",
+          "path": "docs/01-getting-started/06-first-programs.md"
         }
       ]
     },
     {
-      "id": "02-language-basics",
-      "title": "Language Basics",
+      "id": "02-language-fundamentals",
+      "title": "2. Language Fundamentals & Types",
       "chapters": [
         {
-          "id": "01-syntax-and-structure",
-          "title": "Syntax & Structure",
-          "path": "docs/02-language-basics/01-syntax-and-structure.md"
+          "id": "01-grammar-and-lexical-structure",
+          "title": "Grammar & Lexical Structure",
+          "path": "docs/02-language-fundamentals/01-grammar-and-lexical-structure.md"
         },
         {
           "id": "02-variables-and-mutability",
-          "title": "Variables & Mutability",
-          "path": "docs/02-language-basics/02-variables-and-mutability.md"
+          "title": "Variables, Mutability & Scope",
+          "path": "docs/02-language-fundamentals/02-variables-and-mutability.md"
         },
         {
-          "id": "03-primitive-types",
-          "title": "Primitive Types & Conversions",
-          "path": "docs/02-language-basics/03-primitive-types.md"
+          "id": "03-type-system-scalars",
+          "title": "Complete Primitive Types",
+          "path": "docs/02-language-fundamentals/03-type-system-scalars.md"
         },
         {
-          "id": "04-operators-and-expressions",
-          "title": "Operators & Expressions",
-          "path": "docs/02-language-basics/04-operators-and-expressions.md"
+          "id": "04-type-inference-and-casting",
+          "title": "Type Inference & Type Casting",
+          "path": "docs/02-language-fundamentals/04-type-inference-and-casting.md"
         },
         {
-          "id": "05-strings-and-interpolation",
+          "id": "05-operators-and-precedence",
+          "title": "Operators & Precedence Matrix",
+          "path": "docs/02-language-fundamentals/05-operators-and-precedence.md"
+        },
+        {
+          "id": "06-strings-and-interpolation",
           "title": "Strings & Interpolation",
-          "path": "docs/02-language-basics/05-strings-and-interpolation.md"
-        },
-        {
-          "id": "06-control-flow",
-          "title": "Control Flow",
-          "path": "docs/02-language-basics/06-control-flow.md"
+          "path": "docs/02-language-fundamentals/06-strings-and-interpolation.md"
         }
       ]
     },
     {
-      "id": "03-functions-and-closures",
-      "title": "Functions & Closures",
+      "id": "03-control-flow",
+      "title": "3. Control Flow & Loops",
+      "chapters": [
+        {
+          "id": "01-conditionals",
+          "title": "Conditionals (if / elif / else)",
+          "path": "docs/03-control-flow/01-conditionals.md"
+        },
+        {
+          "id": "02-loops-and-iterations",
+          "title": "While & For Loops",
+          "path": "docs/03-control-flow/02-loops-and-iterations.md"
+        },
+        {
+          "id": "03-pattern-matching-and-enumerate",
+          "title": "Enumerate & Destructuring",
+          "path": "docs/03-control-flow/03-pattern-matching-and-enumerate.md"
+        }
+      ]
+    },
+    {
+      "id": "04-functions-and-closures",
+      "title": "4. Functions & Closures",
       "chapters": [
         {
           "id": "01-function-declarations",
-          "title": "Function Declarations",
-          "path": "docs/03-functions-and-closures/01-function-declarations.md"
+          "title": "Function Declarations & Signatures",
+          "path": "docs/04-functions-and-closures/01-function-declarations.md"
         },
         {
-          "id": "02-anonymous-functions-and-lambdas",
+          "id": "02-pass-by-value-and-reference",
+          "title": "Pass by Value vs Reference",
+          "path": "docs/04-functions-and-closures/02-pass-by-value-and-reference.md"
+        },
+        {
+          "id": "03-lambdas-and-closures",
           "title": "Lambdas & Closures",
-          "path": "docs/03-functions-and-closures/02-anonymous-functions-and-lambdas.md"
+          "path": "docs/04-functions-and-closures/03-lambdas-and-closures.md"
+        },
+        {
+          "id": "04-generics-and-templates",
+          "title": "Generics & Templates",
+          "path": "docs/04-functions-and-closures/04-generics-and-templates.md"
         }
       ]
     },
     {
-      "id": "04-data-structures-and-collections",
-      "title": "Data Structures & Collections",
+      "id": "05-data-structures-and-collections",
+      "title": "5. Data Structures & Collections",
       "chapters": [
         {
           "id": "01-lists-and-vectors",
-          "title": "Lists & Dynamic Arrays",
-          "path": "docs/04-data-structures-and-collections/01-lists-and-vectors.md"
+          "title": "Lists & Dynamic Arrays (vec[T])",
+          "path": "docs/05-data-structures-and-collections/01-lists-and-vectors.md"
         },
         {
-          "id": "02-maps-and-dictionaries",
-          "title": "Maps & Dictionaries",
-          "path": "docs/04-data-structures-and-collections/02-maps-and-dictionaries.md"
+          "id": "02-hash-maps-and-dictionaries",
+          "title": "Hash Maps & Dictionaries (map[K, V])",
+          "path": "docs/05-data-structures-and-collections/02-hash-maps-and-dictionaries.md"
+        },
+        {
+          "id": "03-sets-and-tuples",
+          "title": "Sets & Tuples",
+          "path": "docs/05-data-structures-and-collections/03-sets-and-tuples.md"
         }
       ]
     },
     {
-      "id": "05-oop-and-memory",
-      "title": "OOP & Memory Model",
+      "id": "06-object-oriented-programming",
+      "title": "6. Object-Oriented Programming",
       "chapters": [
         {
-          "id": "01-structs-and-classes",
-          "title": "Structs & Classes",
-          "path": "docs/05-oop-and-memory/01-structs-and-classes.md"
+          "id": "01-structs",
+          "title": "Structs & Methods",
+          "path": "docs/06-object-oriented-programming/01-structs.md"
         },
         {
-          "id": "02-operator-overloading",
+          "id": "02-classes-and-encapsulation",
+          "title": "Classes & Encapsulation",
+          "path": "docs/06-object-oriented-programming/02-classes-and-encapsulation.md"
+        },
+        {
+          "id": "03-inheritance-and-polymorphism",
+          "title": "Inheritance & Polymorphism",
+          "path": "docs/06-object-oriented-programming/03-inheritance-and-polymorphism.md"
+        },
+        {
+          "id": "04-operator-overloading",
           "title": "Operator Overloading",
-          "path": "docs/05-oop-and-memory/02-operator-overloading.md"
-        },
-        {
-          "id": "03-pointers-and-references",
-          "title": "Pointers & References",
-          "path": "docs/05-oop-and-memory/03-pointers-and-references.md"
+          "path": "docs/06-object-oriented-programming/04-operator-overloading.md"
         }
       ]
     },
     {
-      "id": "06-standard-library-reference",
-      "title": "Standard Prelude Reference",
+      "id": "07-memory-model-and-pointers",
+      "title": "7. Memory Model & Pointers",
       "chapters": [
         {
-          "id": "01-io-and-printing",
-          "title": "I/O & Console Functions",
-          "path": "docs/06-standard-library-reference/01-io-and-printing.md"
+          "id": "01-raii-and-destructors",
+          "title": "Deterministic RAII & Destructors",
+          "path": "docs/07-memory-model-and-pointers/01-raii-and-destructors.md"
         },
         {
-          "id": "02-math-and-time",
-          "title": "Math, Time & Files API",
-          "path": "docs/06-standard-library-reference/02-math-and-time.md"
+          "id": "02-pointers-and-address-of",
+          "title": "Pointers & Address-Of",
+          "path": "docs/07-memory-model-and-pointers/02-pointers-and-address-of.md"
         }
       ]
     },
     {
-      "id": "07-c-and-cpp-interop",
-      "title": "C & C++ Interoperability",
+      "id": "08-modules-and-build-system",
+      "title": "8. Modules & Build System",
       "chapters": [
         {
-          "id": "01-native-interop",
+          "id": "01-modules-and-imports",
+          "title": "Modules & Imports",
+          "path": "docs/08-modules-and-build-system/01-modules-and-imports.md"
+        },
+        {
+          "id": "02-project-structure",
+          "title": "Project Structure & veyra.toml",
+          "path": "docs/08-modules-and-build-system/02-project-structure.md"
+        }
+      ]
+    },
+    {
+      "id": "09-exhaustive-standard-prelude-reference",
+      "title": "9. Standard Prelude API Reference",
+      "chapters": [
+        {
+          "id": "01-io-and-console",
+          "title": "I/O & Console API",
+          "path": "docs/09-exhaustive-standard-prelude-reference/01-io-and-console.md"
+        },
+        {
+          "id": "02-string-math-files-api",
+          "title": "String, Math, Files & Time API",
+          "path": "docs/09-exhaustive-standard-prelude-reference/02-string-math-files-api.md"
+        }
+      ]
+    },
+    {
+      "id": "10-c-and-cpp-interoperability",
+      "title": "10. C & C++ Interoperability",
+      "chapters": [
+        {
+          "id": "01-native-headers-cinclude",
           "title": "Native Headers & Inline C++",
-          "path": "docs/07-c-and-cpp-interop/01-native-interop.md"
+          "path": "docs/10-c-and-cpp-interoperability/01-native-headers-cinclude.md"
         }
       ]
     },
     {
-      "id": "08-game-development",
-      "title": "Game Development",
+      "id": "11-practical-recipes-and-guides",
+      "title": "11. Practical Guides & Game Dev",
       "chapters": [
         {
-          "id": "01-raylib-game",
+          "id": "01-game-dev-raylib-2d",
           "title": "60 FPS Game with Raylib",
-          "path": "docs/08-game-development/01-raylib-game.md"
+          "path": "docs/11-practical-recipes-and-guides/01-game-dev-raylib-2d.md"
         }
       ]
     },
     {
-      "id": "09-faq-and-migration",
-      "title": "Migration & Troubleshooting",
+      "id": "12-migration-and-faq",
+      "title": "12. Migration & Troubleshooting",
       "chapters": [
         {
-          "id": "01-python-to-veyra",
+          "id": "01-migrating-from-python",
           "title": "Migrating from Python",
-          "path": "docs/09-faq-and-migration/01-python-to-veyra.md"
+          "path": "docs/12-migration-and-faq/01-migrating-from-python.md"
         },
         {
-          "id": "02-troubleshooting",
-          "title": "Troubleshooting & Diagnostics",
-          "path": "docs/09-faq-and-migration/02-troubleshooting.md"
+          "id": "02-compiler-diagnostics-and-faq",
+          "title": "Diagnostics & FAQ",
+          "path": "docs/12-migration-and-faq/02-compiler-diagnostics-and-faq.md"
         }
       ]
     }
